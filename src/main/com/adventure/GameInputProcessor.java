@@ -4,7 +4,6 @@ import main.com.adventure.settings.Command;
 import main.com.adventure.settings.CommandConstants;
 
 import java.util.Locale;
-
 import java.util.Scanner;
 
 public class GameInputProcessor {
