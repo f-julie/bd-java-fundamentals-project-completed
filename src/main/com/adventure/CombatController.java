@@ -26,7 +26,7 @@ public class CombatController {
 
     }
 
-     /**
+    /**.
      * Checks if the player was defeated by seeing if the player's health is at or below 0
      * @return true if the player is defeated
      */
