@@ -5,7 +5,6 @@ import main.com.adventure.world.objects.Shovel;
 import main.com.adventure.world.objects.Tangible;
 import main.com.adventure.world.objects.Weapon;
 import main.com.adventure.world.objects.keys.Key;
-
 public class Player {
 
     public int level = 5;
@@ -45,7 +44,7 @@ public class Player {
      * @return true if the player's level is enough to open the door.
      */
     public boolean canOpenDoor() {
-        return (((double)level / 2) > 2);
+        return ((double) level / 2) > 2;
     }
 
 
@@ -80,9 +79,9 @@ public class Player {
                 currentLocationIndex--;
                 return true;
             }
+        } else {System.out.println(direction + " is not a valid direction");
+            return false;
         }
-        else System.out.println(direction + " is not a valid direction");
-        return false;
     }
 
     /**
