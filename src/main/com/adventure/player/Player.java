@@ -80,10 +80,9 @@ public class Player {
                 currentLocationIndex--;
                 return true;
             }
-        }   else {
+        }   else
             System.out.println(direction + " is not a valid direction");
             return false;
-        }
     }
 
     /**
