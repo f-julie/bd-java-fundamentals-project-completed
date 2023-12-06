@@ -15,14 +15,17 @@ public class Player {
     private int power = 1;
     private int health = 10;
 
+    private String name = "";
     /**
      * Sprint 1 Module 3
      * Saves the player's name. This file should store the name so it can be referenced later. After setting the name,
      * inform the user that the name has been changed by saying "Your name is now {name}".
      * @param newName - the player's name that will be saved
      */
-    public void setName(String newName) {
 
+    public void setName(String newName) {
+        name = newName;
+        System.out.println(String.format("Your name is now %s", newName));
     }
 
     /**
@@ -32,7 +35,7 @@ public class Player {
      * @return The name of the player
      */
     public String getName() {
-        return "";
+        return name;
     }
 
     /**
@@ -42,7 +45,7 @@ public class Player {
      * @return true if the player's level is enough to open the door.
      */
     public boolean canOpenDoor() {
-        return false;
+        return (((double)level / 2) > 2);
     }
 
 
@@ -68,7 +71,18 @@ public class Player {
      * @return true if the move is executed. Otherwise, false.
      */
     public boolean move(String direction, boolean isValidDirection) {
-        return true;
+        //if (direction != "East" || "West");
+        if (isValidDirection) {
+            if (direction.equalsIgnoreCase("East")) {
+                currentLocationIndex++;
+                return true;
+            } else if (direction.equalsIgnoreCase("West")) {
+                currentLocationIndex--;
+                return true;
+            }
+        }
+        else System.out.println(direction + " is not a valid direction");
+        return false;
     }
 
     /**

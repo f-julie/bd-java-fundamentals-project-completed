@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.adventure.MT3" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-06T02:28:39" hostname="DESKTOP-URGQT26" time="0.181">
+  <properties/>
+  <testcase name="testPlayerMovementInvalid()" classname="com.adventure.MT3" time="0.181"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
