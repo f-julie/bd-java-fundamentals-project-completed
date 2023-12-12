@@ -3,7 +3,7 @@ package main.com.adventure.settings;
 public class AppSettings {
 
     /** You will update this property for each project. **/
-    public static final Story story = Story.MT3_TestDirections;
+    public static final Story story = Story.MT5_DigEscape;
 
     public enum Story {
         TestScene,

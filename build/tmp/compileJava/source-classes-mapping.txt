@@ -62,8 +62,8 @@ main/com/adventure/world/Direction.java
  main.com.adventure.world.Direction
 main/com/adventure/world/objects/keys/KeyFactory.java
  main.com.adventure.world.objects.keys.KeyFactory
-main/com/adventure/world/objects/Hole.java
- main.com.adventure.world.objects.Hole
+main/com/adventure/Main.java
+ main.com.adventure.Main
 main/com/adventure/world/objects/keys/Key.java
  main.com.adventure.world.objects.keys.Key
 main/com/adventure/settings/CommandVerb.java
@@ -80,5 +80,7 @@ main/com/adventure/world/objects/doors/Door.java
  main.com.adventure.world.objects.doors.Door
 main/com/adventure/world/objects/keys/OmniKey.java
  main.com.adventure.world.objects.keys.OmniKey
-main/com/adventure/Main.java
- main.com.adventure.Main
+main/com/adventure/world/objects/Hole.java
+ main.com.adventure.world.objects.Hole
+main/com/adventure/world/objects/keys/HoleContent.java
+ main.com.adventure.world.objects.keys.HoleContent
