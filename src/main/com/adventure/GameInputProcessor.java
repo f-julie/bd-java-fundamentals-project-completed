@@ -2,6 +2,7 @@ package main.com.adventure;
 
 import main.com.adventure.settings.Command;
 import main.com.adventure.settings.CommandConstants;
+import main.com.adventure.settings.CommandVerb;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -32,7 +33,9 @@ public class GameInputProcessor {
      */
     private Command buildSimpleCommand(String input) {
         String[] inputArray = input.split(" ");
-        return new Command(inputArray[0], "");
+        String verb = input;
+        CommandVerb commandVerb = CommandVerb.getVerb(verb);
+        return new Command(commandVerb); // Note: When the second argument was null, the test failed.
 
         //String verb = input.substring(0, input.indexOf(" "));
         //String object = "";
@@ -62,9 +65,12 @@ public class GameInputProcessor {
 
         String[] inputArray = input.split(" ");
         if (inputArray.length > 1) {
-            return new Command(inputArray[0], inputArray[1]);
+            String verb = inputArray[0];
+            String object = inputArray[1];
+            CommandVerb commandVerb = CommandVerb.getVerb(verb);
+            return new Command(commandVerb,object);
         }
-        return new Command(inputArray[0], "");
+        return buildSimpleCommand(input);
 
         //String verb = input.substring(0, input.indexOf(" "));
         //String object = input.substring(input.indexOf(" ") + 1);
