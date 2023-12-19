@@ -22,12 +22,22 @@ public class Key implements Tangible {
     private String name = "";
 
     //TODO Add default (i.e. no params) constructor here
+
+    /**
+     *
+     */
     public Key() {
         level = 1;
         name = "key";
     }
 
     //TODO add constructor that takes a level, and saves it
+
+    /**
+     *
+     * @param level
+     */
+
     public Key(int level) {
         this.level = level;
         name = "key";
@@ -35,6 +45,11 @@ public class Key implements Tangible {
 
     //TODO add constructor that takes a level and name, and saves it
 
+    /**
+     *
+     * @param level
+     * @param name
+     */
     public Key(int level, String name) {
         this.level = level;
         this.name = name;

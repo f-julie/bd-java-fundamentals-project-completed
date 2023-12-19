@@ -4,6 +4,10 @@ public class HoleContent {
     private Key content;
     private boolean isCovered = true;
 
+    /**
+     *
+     * @param key
+     */
     public HoleContent(Key key) {
         this.content = key;
     }

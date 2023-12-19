@@ -35,7 +35,7 @@ public class GameInputProcessor {
         String[] inputArray = input.split(" ");
         String verb = input;
         CommandVerb commandVerb = CommandVerb.getVerb(verb);
-        return new Command(commandVerb); // Note: When the second argument was null, the test failed.
+        return new Command(commandVerb);
 
         //String verb = input.substring(0, input.indexOf(" "));
         //String object = "";
@@ -68,7 +68,7 @@ public class GameInputProcessor {
             String verb = inputArray[0];
             String object = inputArray[1];
             CommandVerb commandVerb = CommandVerb.getVerb(verb);
-            return new Command(commandVerb,object);
+            return new Command(commandVerb, object);
         }
         return buildSimpleCommand(input);
 

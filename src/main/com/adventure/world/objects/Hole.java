@@ -1,7 +1,7 @@
 package main.com.adventure.world.objects;
 
-import main.com.adventure.world.objects.keys.Key;
 import main.com.adventure.world.objects.keys.HoleContent;
+import main.com.adventure.world.objects.keys.Key;
 
 public class Hole {
     private HoleContent holeContent;
@@ -37,8 +37,9 @@ public class Hole {
         //TODO Get the HoleContent's content only if the hole is uncovered.
         if (!holeContent.isCovered()) {
             return holeContent.getKey();
+        } else {
+            return null;
         }
-        else return null;
     }
 
     /**
