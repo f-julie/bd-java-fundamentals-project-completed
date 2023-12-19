@@ -27,24 +27,31 @@ public enum CommandVerb {
     public static CommandVerb getVerb(String verbString) {
         if ("TAKE".equalsIgnoreCase(verbString)) {
             return TAKE;
-        } else if ("MOVE".equalsIgnoreCase(verbString)) {
-            return MOVE;
-        } else if ("USE".equalsIgnoreCase(verbString)) {
-            return USE;
-        } else if ("DIG".equalsIgnoreCase(verbString)) {
-            return DIG;
-        } else if ("EXAMINE".equalsIgnoreCase(verbString)) {
-            return EXAMINE;
-        } else if ("LOOK".equalsIgnoreCase(verbString)) {
-            return LOOK;
-        } else if ("HELP".equalsIgnoreCase(verbString)) {
-            return HELP;
-        } else if ("FIGHT".equalsIgnoreCase(verbString)) {
-            return FIGHT;
-        } else if ("INVENTORY".equalsIgnoreCase(verbString)) {
-            return INVENTORY;
-        } else {
-            return INVALID;
         }
+        if ("MOVE".equalsIgnoreCase(verbString)) {
+            return MOVE;
+        }
+        if ("USE".equalsIgnoreCase(verbString)) {
+            return USE;
+        }
+        if ("DIG".equalsIgnoreCase(verbString)) {
+            return DIG;
+        }
+        if ("EXAMINE".equalsIgnoreCase(verbString)) {
+            return EXAMINE;
+        }
+        if ("LOOK".equalsIgnoreCase(verbString)) {
+            return LOOK;
+        }
+        if ("HELP".equalsIgnoreCase(verbString)) {
+            return HELP;
+        }
+        if ("FIGHT".equalsIgnoreCase(verbString)) {
+            return FIGHT;
+        }
+        if ("INVENTORY".equalsIgnoreCase(verbString)) {
+            return INVENTORY;
+        }
+        return INVALID;
     }
 }
