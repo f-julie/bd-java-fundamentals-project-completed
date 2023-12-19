@@ -6,7 +6,7 @@ public class HoleContent {
 
     /**
      *
-     * @param key
+     * @param key - the value to save to the content property
      */
     public HoleContent(Key key) {
         this.content = key;

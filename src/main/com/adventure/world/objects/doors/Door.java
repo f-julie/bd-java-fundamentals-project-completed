@@ -34,8 +34,8 @@ public class Door implements Tangible {
 
     /**
      *
-     * @param isOpen
-     * @param level
+     * @param isOpen - the value to save to the isOpen property
+     * @param level - the value to save to the level property
      */
     public Door(boolean isOpen, int level) {
         this.isOpen = isOpen;

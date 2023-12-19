@@ -19,7 +19,6 @@ public enum CommandVerb {
     //Used in Sprint 3 Module 1
     INVENTORY;
 
-
     /**
      * Takes verbString to determine and return the associated CommandVerb.
      * @param verbString - the verb from the user input

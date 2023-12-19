@@ -35,7 +35,7 @@ public class Key implements Tangible {
 
     /**
      *
-     * @param level
+     * @param level - the value to save to the level property
      */
 
     public Key(int level) {
@@ -47,8 +47,8 @@ public class Key implements Tangible {
 
     /**
      *
-     * @param level
-     * @param name
+     * @param level - the value to save to the level property
+     * @param name - the value to save to the name property
      */
     public Key(int level, String name) {
         this.level = level;
