@@ -48,10 +48,6 @@ public class Player {
         return ((double) level / 2) > 2;
     }
 
-
-
-
-
     /**
      * Sprint 1 Module 4
      * The move function takes two parameters: a direction string and an isValidDirection boolean.
@@ -95,6 +91,7 @@ public class Player {
      */
     public void setWeapon(Weapon item) {
         //TODO Complete this function in Sprint 3 Module 1
+        power = item.getPower();
     }
 
     /**
