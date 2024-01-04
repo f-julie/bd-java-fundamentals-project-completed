@@ -45,8 +45,7 @@ public class SceneDescriptionFileReader {
                 lines.append(line).append("\n");
                 line = br.readLine();
             }
-        }
-        catch (IOException e){
+        } catch (IOException e) {
             throw new IOException();
         }
         return lines.toString();

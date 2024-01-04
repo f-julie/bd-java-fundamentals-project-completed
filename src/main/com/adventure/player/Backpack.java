@@ -19,7 +19,7 @@ public class Backpack {
     public boolean addItem(Tangible item) {
         //TODO Complete the function
         for (int i = 0; i < items.length; i++) {
-            if (items[i] == null){
+            if (items[i] == null) {
                 items[i] = item;
                 return true;
             }

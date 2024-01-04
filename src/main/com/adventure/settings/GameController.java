@@ -165,6 +165,7 @@ public class GameController {
                 break;
             case INVENTORY:
                 player.printItems();
+                break;
             default:
                 printInvalidCommand();
                 break;
