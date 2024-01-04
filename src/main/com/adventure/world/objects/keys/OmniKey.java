@@ -28,7 +28,18 @@ public class OmniKey implements Tangible {
     public void useItem(Tangible door) {
         if (door instanceof OmniDoor) {
             //TODO Complete the function
-            System.out.println("Your solution goes here");
+
+            // Understand Plan Execute Reflect
+            // Check if door is OmniDoor
+            // If yes, configure key to OmniDoor
+            // If no, give message, "This key can only be used with OmniDoors."
+
+            boolean isValidKey = true;
+            OmniDoor door1 = (OmniDoor) door;
+            this.pins = door1.pins;
+        } else {
+            boolean isValidKey = false;
+            System.out.println("This key can only be used with OmniDoors");
         }
     }
 

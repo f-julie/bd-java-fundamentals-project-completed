@@ -18,6 +18,12 @@ public class Backpack {
      */
     public boolean addItem(Tangible item) {
         //TODO Complete the function
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] == null){
+                items[i] = item;
+                return true;
+            }
+        }
         return false;
     }
 
@@ -28,6 +34,11 @@ public class Backpack {
      */
     public Tangible getItem(String name) {
         //TODO Complete the function
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] != null && name.equals(items[i].getName())) {
+                return items[i];
+            }
+        }
         return null;
     }
 
@@ -38,6 +49,11 @@ public class Backpack {
      */
     public boolean removeItem(Tangible item) {
         //TODO Complete the function
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] != null && item.getName().equals(items[i].getName())) {
+                items[i] = null;
+            }
+        }
         return false;
     }
 
@@ -51,5 +67,9 @@ public class Backpack {
      */
     public void printItems() {
         //TODO Complete the function
+        System.out.println("Here are the items in your backpack:");
+        for (Tangible item : items) {
+            System.out.println(" - " + item + "\n");
+        }
     }
 }

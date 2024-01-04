@@ -16,6 +16,8 @@ public class Player {
     private int health = 10;
 
     private String name = "";
+
+    private Backpack backpack = new Backpack();
     /**
      * Sprint 1 Module 3
      * Saves the player's name. This file should store the name so it can be referenced later. After setting the name,
@@ -102,7 +104,7 @@ public class Player {
      */
     public Tangible getItem(String itemName) {
         //TODO Complete this function in Sprint 3 Module 2
-        return null;
+        return backpack.getItem(itemName);
     }
 
     /**
@@ -113,7 +115,8 @@ public class Player {
      */
     public Tangible removeItem(Tangible item) {
         //TODO Complete this function in Sprint 3 Module 2
-        return null;
+        backpack.removeItem(item);
+        return item;
     }
 
     /**
@@ -122,6 +125,7 @@ public class Player {
      */
     public void printItems() {
         //TODO Complete this function in Sprint 3 Module 2
+        backpack.printItems();
     }
 
     /**
@@ -131,6 +135,7 @@ public class Player {
      */
     public void addItem(Tangible item) {
         //TODO Complete this function
+        backpack.addItem(item);
     }
 
     public void setKey(Key item) {
