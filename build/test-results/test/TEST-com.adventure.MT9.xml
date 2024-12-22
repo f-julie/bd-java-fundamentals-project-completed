@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.adventure.MT9" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-04T21:25:57" hostname="DESKTOP-URGQT26" time="0.173">
+<testsuite name="com.adventure.MT9" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-06T16:52:44" hostname="DESKTOP-URGQT26" time="0.093">
   <properties/>
-  <testcase name="testOmniDoorKey()" classname="com.adventure.MT9" time="0.173"/>
+  <testcase name="testOmniDoorKey()" classname="com.adventure.MT9" time="0.093"/>
   <system-out><![CDATA[The door is unlocked!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
